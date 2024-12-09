@@ -20,7 +20,7 @@ namespace Tyuiu.MilyutinND.Sprint6.Task0.V7
         {
             MessageBox.Show("Таск 0 выполнил студент группы СМАРТб-24-1 Милютин Никита Дмитрииевич", "Сообщение");
         }
-
+        //Р
         private void textBoxVarX_IAA_TextChanged(object sender, EventArgs e)
         {
 
