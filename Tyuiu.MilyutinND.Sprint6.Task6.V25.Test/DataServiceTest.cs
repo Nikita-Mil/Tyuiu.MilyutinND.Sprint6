@@ -8,10 +8,12 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25.Test
         [TestMethod]
         public void TestMethod1()
         {
-            string path = @"C:\DataSprint6\InPutDataFileTask6V25.txt";
             DataService ds = new DataService();
+            string path = @"C:\DataSprint6\InPutFileTask6V25.txt";
+
             string res = ds.CollectTextFromFile(path);
-            string wait = "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE";
+            string wait = "ELHLVt EgQpG dsE jiUFMDjMsEervIz ZujmucpYQE QybRwHOetJ";
+
             Assert.AreEqual(wait, res);
         }
     }
