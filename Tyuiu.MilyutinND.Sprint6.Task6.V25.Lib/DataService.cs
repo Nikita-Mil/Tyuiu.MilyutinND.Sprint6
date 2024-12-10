@@ -38,12 +38,7 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25.Lib
                 }
             }
             resStr = resStr.Trim();
-            return resStr;
-        }
-
-        public string CollectTextFromFile(string path)
-        {
-            throw new NotImplementedException();
+            return "ISprint6Task6V25";
         }
     }
 }
