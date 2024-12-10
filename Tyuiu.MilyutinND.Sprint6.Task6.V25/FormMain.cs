@@ -24,7 +24,7 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25
         {
             buttonOpenFile_IPG.Enabled = true;
             buttonDone_IPG.Enabled = false;
-            textBoxOutput_IPG.Text = ds.CollectTextFromFile(openFilePath);
+
 
         }
 
