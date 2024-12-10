@@ -23,7 +23,7 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25.Lib
 
                 }
             }
-            return ISprint6Task6V25;
+            return "ISprint6Task6V25";
 
         }
     }
