@@ -6,7 +6,17 @@ namespace Tyuiu.MilyutinND.Sprint6.Task3.V12.Lib
     {
         public int[,] Calculate(int[,] matrix)
         {
-            throw new NotImplementedException();
+            for (int y = 0; y < matrix.GetLength(0); y++)
+            {
+                for (int x = 0; x < matrix.GetLength(1); x++)
+                {
+                    if (y <= 0 && matrix[y, x] % 2 == 0)
+                    {
+                        matrix[y, x] = 0;
+                    }
+                }
+            }
+            return matrix;
         }
     }
 }
