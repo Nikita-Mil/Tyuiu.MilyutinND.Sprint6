@@ -25,10 +25,5 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25.Lib
             }
             return res;
         }
-
-        public string CollectTextFromFile(string openFilePath)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
