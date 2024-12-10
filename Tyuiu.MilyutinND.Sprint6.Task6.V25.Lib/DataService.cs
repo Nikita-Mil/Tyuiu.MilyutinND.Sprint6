@@ -6,6 +6,28 @@ namespace Tyuiu.MilyutinND.Sprint6.Task6.V25.Lib
     {
         public string CollectTextFromFile(string str, string path)
         {
+            string res = "";
+            using (StreamReader reader = new StreamReader(path))
+            {
+                string line;
+                while ((line = reader.ReadLine()) != null)
+                {
+                    string[] words = line.Split(' ');
+                    foreach (string word in words)
+                    {
+                        if (word.Contains('E'))
+                        {
+                            res = res + " " + word;
+                        }
+                    }
+
+                }
+            }
+            return res;
+        }
+
+        public string CollectTextFromFile(string openFilePath)
+        {
             throw new NotImplementedException();
         }
     }
