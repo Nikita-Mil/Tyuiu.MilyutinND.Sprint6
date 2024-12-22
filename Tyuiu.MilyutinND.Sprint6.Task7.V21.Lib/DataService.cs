@@ -7,14 +7,11 @@ namespace Tyuiu.MilyutinND.Sprint6.Task7.V21.Lib
         public int[,] GetMatrix(string path)
         {
             string fileData = File.ReadAllText(path);
-            fileData = fileData.Replace('\n', '\r');
+            fileData = fileData.Replace("\n", "\r");
             string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
-
             int rows = lines.Length;
             int columns = lines[0].Split(';').Length;
-
             int[,] arrayValues = new int[rows, columns];
-
             for (int r = 0; r < rows; r++)
             {
                 string[] line_r = lines[r].Split(';');
@@ -23,12 +20,14 @@ namespace Tyuiu.MilyutinND.Sprint6.Task7.V21.Lib
                     arrayValues[r, c] = Convert.ToInt32(line_r[c]);
                 }
             }
-
+            rows = arrayValues.GetUpperBound(0) + 1;
+            columns = arrayValues.Length / rows;
+            int xCol = 7;
             for (int r = 0; r < rows; r++)
             {
-                if (arrayValues[r, 8] != 5)
+                for (int c = xCol; c <= xCol; c++)
                 {
-                    arrayValues[r, 8] = -1;
+                    if (arrayValues[r, c] != 5) arrayValues[r, c] = -1;
                 }
             }
             return arrayValues;
